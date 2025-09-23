@@ -1,0 +1,35 @@
+#AboutMeCen{
+    text-align: center;
+    color: Olive;
+    
+}
+
+#HeadCen{
+    text-align: center;
+    color: slategray;
+    
+}
+
+#SkillCen{
+    text-align: center;
+    color: coral;
+    
+}
+
+#ProjectCen{
+    text-align: center;
+    color: rebeccapurple;
+    
+}
+
+#ContactCen{
+    text-align: center;
+    color: goldenrod;
+    
+}
+
+#ali{
+    display: inline-block;
+    text-align: left;
+
+}
