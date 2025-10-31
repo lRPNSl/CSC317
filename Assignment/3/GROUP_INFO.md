@@ -6,8 +6,8 @@
 - Akshith Gojuru        - 924993456 - Gakshith  - **AI Text Prompt CSS**
 - Papat Thanitkhunkitti - 924975464 - lRPNSl    - **AI Image+Text Prompt CSS** 
 
-**Elected Submitter:** Nathan Muniz - natemuniz
-**Repository Link:** https://github.com/natemuniz/CSC317/tree/main/assignments/3
+**Elected Submitter:** Papat Thanitkhunkitti - lRPNSl
+**Repository Link:** https://github.com/lRPNSl/CSC317/tree/main/Assignment/3
 
 ## Work Distribution
 - Hand-written CSS (Collaborative): Nathan Muniz and Summer Gagliardotto
