@@ -6,8 +6,8 @@
 - Akshith Gojuru        - 924993456 - Gakshith
 - Papat Thanitkhunkitti - 924975464 - lRPNSl
 
-**Elected Submitter:** Nathan Muniz - natemuniz
-**Repository Link:** https://github.com/natemuniz/CSC317/tree/main/assignments/3
+**Elected Submitter:** Papat Thanitkhunkitti - lRPNSl
+**Repository Link:** https://github.com/lRPNSl/CSC317/tree/main/Assignment/3
 
 # Portfolio Styling Assignment Analysis
 
@@ -29,7 +29,7 @@ Working on this Portfolio Styling Assignment was a great learning experience for
 During my work on this assignment I learned that successful AI prompting for image generation and UI code requires clarity, structure, and awareness of constraints. First, prompts must explicitly describe the visual composition for example image aspect ratio, focal point and color palette. These details guide the model to produce assets that integrate cleanly with a page layout.Working with images taught me to treat them as UI components rather than decorative extras. Specifying how an image should behave such as object-fit, hover transform, aspect-ratio and ensure it degrades gracefully across devices. I also learned the value of separating concerns in prompts: one part for the visual style, one part for CSS behaviors, and one part for accessibility/usability instructions. This leads to code that’s easier to test, reuse, and iterate.The process of using ChatGPT is AI is fastest when given precise examples. Providing a minimal HTML scaffold and naming the CSS variables I expect saved a lot of back-and-forth. When generating icons, requesting SVGs and alt text improved quality and accessibility. In future prompts I will always include sample HTML, desired breakpoints, exact color tokens, and a short “do not do” list to get production-ready results in one go.
 
 ## Group Preferred Version
-[Explain which version the group prefers and why - this should be a consensus decision]
+Our group decided to go with the fouth version as base and then combine all other part that we like for example we agree on that we like color theme on first and second file and how clean of navigator bar is for third and fouthto combine all of that to make it look more cleaner layout, smoother transitions, and a more cohesive color scheme. We agreed that this version looked more professional and user-friendly. It also aligned better with our original design goals, emphasizing both functionality and visual balance. The consensus was that this version represents our collective vision the best.
 
 ## Collaboration Experience
-[Describe how the group worked together, challenges faced, and lessons learned about teamwork]
+Working together as a group was a valuable experience. We divided tasks based on each member’s strengths—some focused on design elements, others on functionality and content organization. Communication and scheduling were our biggest challenges, especially when coordinating edits, feedback and find time to work togather because of life schedule not aline. However, through consistent discussions and shared feedback, we learned the importance of compromise, active listening, and clear communication. This project strengthened our teamwork skills and taught us how to blend different ideas into one cohesive final product.
