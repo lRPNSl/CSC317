@@ -1,9 +1,8 @@
 My Propmt: Hey! I’m about to paste some HTML. Could you style it for me?
 ChatGpt : Yes, Sure.
-My PROMPT: I want a Stylish css, Assthetic look.Please write a single CSS stylesheet and i will provide the html file after these prompt.
+My PROMPT: I want a Stylish css,Professional look.Please write a single CSS stylesheet and i will provide the html file after these prompt.
 Here’s what I need:
 Color vibe
-•	ASSTHETIC LOOK LIKE APPLE WEBISTE style.
 •	Background #0d1117, accent #58a6ff, text #c9d1d9.
 •	Keep contrast soft—no harsh blacks/whites.
 Type & hierarchy
