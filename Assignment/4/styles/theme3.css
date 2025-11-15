@@ -1,0 +1,213 @@
+/* --- Global & Body Setup (Monokai Terminal Theme) --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Use a monospaced font for a true terminal feel */
+    font-family: 'Consolas', 'Courier New', monospace; 
+}
+
+body {
+    background-color: #272822; /* Monokai Dark Background */
+    color: #F8F8F2; /* Light Text */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* --- Calculator Structure --- */
+.calculator-container {
+    width: 100%;
+    max-width: 360px; /* Slightly narrower for a tight feel */
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    color: #66D9EF; /* Cyan accent for the title */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+.calculator {
+    background-color: #383A3D; /* Slightly lighter gray body */
+    border-radius: 4px; /* Sharp corners */
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid #494C50; /* Subtle border */
+}
+
+/* --- Display Screen --- */
+.last-answer {
+    font-size: 1rem;
+    color: #AE81FF; /* Purple for previous answer */
+    text-align: right;
+    height: 20px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.output {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #F8F8F2; /* White text for main output */
+    background-color: #272822; /* Match terminal background */
+    border-radius: 2px;
+    padding: 15px 10px;
+    text-align: right;
+    margin-bottom: 15px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 1px solid #66D9EF; /* Cyan glow border */
+}
+
+/* --- Button Grid & General Button Styles --- */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; /* Tight gaps */
+}
+
+button {
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.05s linear; /* Quick transition */
+    text-transform: uppercase;
+    box-shadow: none;
+}
+
+button:hover {
+    filter: brightness(1.2); /* Brighten on hover */
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* --- Specific Button Types --- */
+
+/* Numbers & Decimal (Standard Monokai Foreground) */
+button.Number,
+#Decimal {
+    background-color: #555555;
+    color: #F8F8F2;
+}
+button.Number:hover,
+#Decimal:hover {
+    background-color: #666666;
+}
+
+/* Functions (AC, ⌫, ±) (Muted Accent) */
+#Clear,
+#Delete,
+#PlusAndMinus {
+    background-color: #75715E; /* Muted gray/yellow */
+    color: #272822; /* Dark text */
+    font-weight: 600;
+}
+
+/* Operators (Orange Accent) */
+.Operator {
+    background-color: #FD971F; /* Monokai Orange */
+    color: #272822; /* Dark text for contrast */
+    font-weight: bold;
+}
+
+/* Equal Button (Green Accent) */
+#Equal {
+    background-color: #A6E22E; /* Monokai Green */
+    color: #272822;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* --- Back to Portfolio Button (Monokai Switch Style) --- */
+.back-to-portfolio {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    background-color: #383A3D;
+    color: #F8F8F2;
+    border: 2px solid #66D9EF; /* Cyan glow border */
+    padding: 10px 20px;
+    border-radius: 4px;
+
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    transition: all 0.15s ease;
+}
+
+/* Hover = neon glow + slight lift */
+.back-to-portfolio:hover {
+    background-color: #494C50;
+    color: #A6E22E; /* Green glow text */
+    box-shadow: 0 0 10px #66D9EF;
+    transform: translateY(-2px);
+}
+
+/* Active click animation */
+.back-to-portfolio:active {
+    transform: scale(0.98);
+}
+
+
+/* --- Theme Switcher --- */
+.theme-switcher {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: auto;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.theme-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.theme-button {
+    background-color: #383A3D;
+    color: #F8F8F2;
+    border: 1px solid #494C50;
+    padding: 6px 12px;
+    border-radius: 3px; 
+    font-size: 0.9rem;
+}
+
+.theme-button:hover {
+    background-color: #494C50;
+}
+
+/* Active button uses the primary accent color */
+.theme-button.active {
+    background-color: #66D9EF;
+    border-color: #66D9EF;
+    color: #272822;
+    font-weight: bold;
+}

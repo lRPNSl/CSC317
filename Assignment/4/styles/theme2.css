@@ -1,0 +1,180 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f0f4f8;
+}
+
+/* Calculator Container */
+.calculator-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+header h1 {
+    font-size: 2rem;
+    color: #ff6b81;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Calculator Box */
+.calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+/* Last Answer & Output */
+.last-answer, .output {
+    background: #ffffffaa;
+    backdrop-filter: blur(5px);
+    padding: 15px 20px;
+    border-radius: 20px;
+    text-align: right;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.last-answer {
+    font-size: 1rem;
+    color: #555;
+}
+
+.output {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ff6b81;
+}
+
+/* Buttons Grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* Buttons General Style */
+button {
+    border: none;
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.05);
+}
+
+/* Number Buttons */
+.Number {
+    background: #ffe0e6;
+    color: #ff6b81;
+}
+
+.Number:hover {
+    background: #ffccd6;
+}
+
+/* Operator Buttons */
+.Operator {
+    background: #ffd6a5;
+    color: #ff6b00;
+}
+
+.Operator:hover {
+    background: #ffc078;
+}
+
+/* Equal Button */
+.equal {
+    background: #9bf6ff;
+    color: #0077b6;
+    grid-column: span 2;
+}
+
+.equal:hover {
+    background: #64d9ff;
+}
+
+/* Special Function Buttons */
+#Delete, #Clear, #Decimal, #PlusAndMinus {
+    background: #d0f4de;
+    color: #1b4332;
+}
+
+#Delete:hover, #Clear:hover, #Decimal:hover, #PlusAndMinus:hover {
+    background: #a3e4c9;
+}
+
+/* Back to Portfolio – Cute Rounded Button Style */
+.back-to-portfolio {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 12px 22px;
+    border-radius: 20px;
+    background: #ffe0e6; /* soft pink */
+    color: #ff6b81;      /* theme pink */
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    border: 2px solid #ffccd6;
+    transition: all 0.25s ease;
+}
+
+/* Hover effect */
+.back-to-portfolio:hover {
+    background: #ff6b81;
+    color: white;
+    border-color: #ff6b81;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(255,107,129,0.35);
+}
+
+
+/* Theme Switcher */
+.theme-switcher {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: auto;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.theme-button {
+    padding: 10px 18px;
+    border-radius: 15px;
+    border: none;
+    background: #ffd6a5;
+    color: #ff6b00;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.theme-button.active,
+.theme-button:hover {
+    background: #ff6b81;
+    color: #fff;
+}

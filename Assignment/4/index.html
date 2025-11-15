@@ -1,18 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>JavaScript Practice</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Papat Thanitkhunkitti - Portfolio</title>
+  
 </head>
 <body>
-    <h1>JavaScript Week 0 Practice</h1>
-    <button id="greetButton">Click Me!</button>
-    <div id="output"></div>
+    <link rel="stylesheet" id="css-theme" href="styles/styles.css">
+<header>
+<!-- Profile picture -->
+<div style="text-align:center; margin:20px 0;">
+  <img src="images/IMG.png" alt="Profile picture"
+       style="width:150px; height:150px; object-fit:cover; 
+border-radius:50%; border:3px solid white; box-shadow:0 0 10px 
+rgba(0,0,0,0.3);">
+</div>
+
+  <h1>Papat Thanitkhunkitti</h1>
+  <nav>
+    <ul>
+      <li><a href="#aboutmebio">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="bio">
+    <h2>About Me</h2>
+    <p>
+        I'm a Transfer student from City College of San Francisco and now major in Computer Science in San Francisco State. 
+        I alway interesting in computer Programming and hardware in the way that how does it work how will we make it work.
+        I'm plan to work as Software Engineers or in IT Department and raod to be cybersecurity in future.
+        My biggest hobby would be playing game and listing to music, I also like hiking or excerise, I know how to play guitar and love watching F1, Soccer, Baseketball
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+     
+      <h3>Programming Languages and Other Styles</h3>
+     
+      <ul>
+        <li>HTML</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>JavaScript</li>
+        <li>C++</li>
+        <li>CSS</li>
+      </ul>
+     
+      <h3>Tools and Technology</h3>
+       <ul>
+        <li>Microsft office</li>
+        <li>Adobe Photoshop, Premiere Pro, illustrator</li>
+        <li>Visual Studio Code</li>
+        <li>Linux: Ubantu</li>
+          <li>IntelliJ</li>
+          <li>Clion</li>
+          <li>Terminal</li>
+          <li>XCode</li>
+       </ul>
+     
+   
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+       <ul>
+        <li class="dropdown">
+            <h4>Portfolio Website</h4>
+            <ul class="dropdown-content">
+              <li>Built using HTML, CSS, and custom interactive components</li>
+              <li>Responsive layout designed to work on desktop and mobile</li>
+              <li>Created custom animations, color themes, and UI elements</li>
+              <li>Showcases my skills, personal information, and project experience</li>
+            </ul>
+          </li>
+          
+
+           <li class="dropdown">
+            <h4>Bot control music in Line</h4>
+           <ul class="dropdown-content">
+              <li>Code written in JavaScript</li>
+              <li>Used VScode + Terminal</li>
+              <li>Built a Project that you can let bot quere song by name and artist with out having a spotify account in group chat platfrom call line.
+                By using Line API + spotify Framework and run in Ubantu HomeServer.</li>
+           </ul>
+           </li>
+
+           <li class="dropdown">
+            <h4>Website-Calculator</h4>
+            <ul class="dropdown-content">
+                <li>Code in: HTML, CSS, JavaScript</li>
+                <li>A fully functional, responsive calculator built using vanilla JavaScript, offering basic arithmetic operations (addition, subtraction, multiplication, and division)</li>
+                <li><a href="calculator.html" class="projects-link">CheckOut!</a></li>
+            </ul>
+           </li>
+       </ul>
+   
+  </section>
+  <script src="scripts/switcher-port.js"></script>
+  <div class="theme-switcher">
+    <div class="theme-buttons">
+        <button class="theme-button active" data-theme="styles">Main</button>
+        <button class="theme-button" data-theme="ai-1">AI 1</button>
+        <button class="theme-button" data-theme="ai-2">AI 2</button>
+        <button class="theme-button" data-theme="ai-3">AI 3</button>
+        <button class="theme-button" data-theme="ai-4">AI 4</button>
+    </div>
+</div>
+</main>
+
+<footer id="contact">
+<a href="https://github.com/lRPNSl"><img src="images/githubIMG.jpeg" 
+  alt="GitHub logo" width="60" height="60"></a> 
+
+<a href="https://www.linkedin.com/in/papat-thanikhunkitti-7454b6378/"><img src="images/LinkedInIMG.jpeg" 
+  alt="LinkedIn logo" width="60" height="60"></a>
     
-    <script src="scripts/hello.js"></script>
-    <script>
-        document.getElementById("greetButton").addEventListener("click", function() {
-            document.getElementById("output").textContent = createMessage("JavaScript");
-        });
-    </script>
+  <p>
+    @ 2025 Copyright:Papat_Thanitkhunkitti
+</p>
+</footer>
+
+
+
 </body>
 </html>

@@ -1,46 +1,65 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Calculator</title>
-    </head>
-    <body>
-        <link rel="stylesheet" href="/styles/calculator.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link id="css-theme" rel="stylesheet" href="styles/calculator.css">
+</head>
+<body>
+    <div class="calculator-container">
         <header>
+            <nav aria-label="Primary">
+                <a href="index.html" class="back-to-portfolio" title="Return to Portfolio">
+                    ← Back to Portfolio
+                </a>
+            </nav>
             <h1>Calculator</h1>
         </header>
-        <main>
-            <div id="Output">0</div>
-            <div id="Answer"></div>
-                <button class="Number" data-number="0">0</button>
-                <button class="Number" data-number="1">1</button>
-                <button class="Number" data-number="2">2</button>
-                <button class="Number" data-number="3">3</button>
-                <button class="Number" data-number="4">4</button>
-                <button class="Number" data-number="5">5</button>
-                <button class="Number" data-number="6">6</button>
+        <div class="calculator-layout">
+            <!-- <div id="HistoryPanel" class="history-panel"></div> -->
+        <div class="calculator">
+            <div id="LastAnswer" class="last-answer"></div>
+            <div id="Output" class="output">0</div>
+
+            <div class="buttons">
                 <button class="Number" data-number="7">7</button>
                 <button class="Number" data-number="8">8</button>
                 <button class="Number" data-number="9">9</button>
-            </div>
-
-            <div>
-                <button class="Operator" data-operator="+">+</button>
-                <button class="Operator" data-operator="-">-</button>
-                <button class="Operator" data-operator="x">x</button>
                 <button class="Operator" data-operator="/">/</button>
+
+                <button class="Number" data-number="4">4</button>
+                <button class="Number" data-number="5">5</button>
+                <button class="Number" data-number="6">6</button>
+                <button class="Operator" data-operator="x">x</button>
+
+                <button class="Number" data-number="1">1</button>
+                <button class="Number" data-number="2">2</button>
+                <button class="Number" data-number="3">3</button>
+                <button class="Operator" data-operator="-">-</button>
+
+                <button class="Number" data-number="0">0</button>
+                <button id="Decimal">.</button>
+                <button id="PlusAndMinus">±</button>
+                <button class="Operator" data-operator="+">+</button>
+
+                <button id="Delete">⌫</button>
+                <button id="Clear">AC</button>
+                <button id="Equal" class="equal">=</button>
                 <button class="Operator" data-operator="%">%</button>
             </div>
+        </div>
+    </div>
+    </div>
 
-            <div>
-                <button id="Delete">back</button>
-                <button id="Clear">AC</button>
-                <button id="Decimal">.</button>
-                <button id="PlusAndMinus">+/-</button>
-                <button id="Equal">=</button>
-            </div>
-            <script src="scripts/calculator.js">
-
-            </script>
-        </main>
-    </body>
+    <div class="theme-switcher">
+        <div class="theme-buttons">
+            <button class="theme-button active" data-theme="calculator">Main</button>
+            <button class="theme-button" data-theme="theme1">1</button>
+            <button class="theme-button" data-theme="theme2">2</button>
+            <button class="theme-button" data-theme="theme3">3</button>
+        </div>
+    </div>
+    <script src="scripts/calculator.js"></script>
+    <script src="scripts/switcher-cal.js"></script>
+</body>
 </html>

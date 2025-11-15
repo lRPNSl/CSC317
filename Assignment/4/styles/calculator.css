@@ -1,0 +1,152 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f8f9fa, #dfe9f3);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 50px 0;
+}
+
+/* Container for the whole calculator */
+.calculator-container {
+    text-align: center;
+}
+
+/* Header styling */
+header h1 {
+    margin-bottom: 20px;
+    font-size: 3rem;
+    color: #333;
+}
+
+/* Calculator box */
+.calculator {
+    background-color: #f4f7f8;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 320px;
+}
+
+/* Last answer text */
+.last-answer {
+    font-size: 0.9rem;
+    color: #555;
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+/* Output screen */
+.output {
+    background-color: #e1e5ea;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 2rem;
+    text-align: right;
+    margin-bottom: 20px;
+    min-height: 50px;
+    color: #222;
+    overflow-x: auto;
+}
+
+/* Buttons grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Buttons styling */
+button {
+    padding: 20px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #d0d4d9;
+}
+
+/* Operator buttons */
+.Operator, .equal {
+    background-color: #f9a825;
+    color: white;
+}
+
+.Operator:hover, .equal:hover {
+    background-color: #f57f17;
+}
+
+
+
+.back-to-portfolio {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    padding: 10px 20px;
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(8px);
+    color: #222;
+    border: 2px solid rgba(0,0,0,0.25);
+    border-radius: 50px; /* pill shape */
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Hover effect */
+.back-to-portfolio:hover {
+    background: #4b6cb7;
+    color: white;
+    border-color: #4b6cb7;
+    transform: translateY(-2px);
+    box-shadow: 0 0 12px rgba(75,108,183,0.4);
+}
+
+
+.theme-switcher{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: auto;
+    margin: 0 auto var(--space);
+    padding: 16px;
+    background: rgba(255,255,255,.02);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    
+  }
+  .theme-buttons{ display: flex; flex-wrap: wrap; gap: 8px; }
+  .theme-button{
+    padding: 8px 10px;
+    background: rgba(255,255,255,.03);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    cursor: pointer;
+    transition: transform .15s ease, box-shadow .2s ease, border-color .2s ease, background .2s ease;
+  }
+  .theme-button:hover{
+    transform: translateY(-1px);
+    border-color: rgba(108,180,255,.35);
+    box-shadow: 0 0 0 3px rgba(108,180,255,.15);
+  }
+  .theme-button.active{
+    background: rgba(108,180,255,.15);
+    border-color: rgba(108,180,255,.6);
+  }
+  
